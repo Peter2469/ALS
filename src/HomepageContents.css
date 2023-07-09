@@ -1,0 +1,96 @@
+.Header {
+  text-align: center;
+}
+
+.Contents {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(12px + 2vmin);
+  color: white;
+}
+
+a {
+  color: transparent;
+}
+
+h2 {
+  font-size: 32px !important;
+  color: white;
+}
+
+.header-font{
+  margin-top: 100px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.item {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid white;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 24px !important;
+  color: white; 
+}
+
+p {
+  font-size: 18px !important;
+  color: white;
+  text-align: left;
+}
+
+.allow-homepage-overflow {
+  overflow: scroll;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1920px) {
+  .header-font{
+    margin-top: 0px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .section {
+        width: 95%;
+    }
+
+    .item {
+        width: 95%;
+    }
+
+    .allow-overflow {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    h2{
+      font-size: 24px !important;
+    }
+
+    .header-font{
+      margin-top: 0px !important;
+    }
+
+    h3{
+      font-size: 18px !important;
+    }
+
+    p{
+      font-size: 14px !important;
+    }
+
+}

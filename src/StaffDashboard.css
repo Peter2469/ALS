@@ -1,0 +1,77 @@
+.SDashboard-Start{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.SDashboard-Description{
+  font-size: 24px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.book-form {
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid white;
+  width: 100%;
+}
+
+.book-form input {
+  border: 1px solid white;
+  padding: 14px 16px;
+  font-size: 1.063rem;
+  background-color: transparent;
+  color: white;
+  margin: 5px;
+}
+
+.book-form select {
+  border: 1px solid white;
+  padding: 14px 16px;
+  font-size: 1.063rem;
+  background-color: transparent;
+  color: white;
+  margin: 10px;
+}
+
+.book-form button[type="submit"] {
+  border: 1px solid white;
+  padding: 14px 16px;
+  font-size: 1.063rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer !important;
+}
+
+.error-message {
+  color: white;
+  font-size: 1.063rem;
+}
+
+h1 {
+  font-size: 32px;
+  color: white;
+  margin: 10px;
+}
+
+label {
+  font-size: 1.063rem;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .book-form {
+    width: 100%;
+  }
+
+  .book-form select {
+    margin: 5px;
+    width: 70%;
+  }
+}

@@ -1,0 +1,86 @@
+.Signup-Start {
+  min-height: 100vh;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  background-image: url(/src/images/readingbook.jpg) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: flex-end; /* Change justify-content to flex-end to align container to the right */
+  align-items: center;
+  backdrop-filter: blur(10px) brightness(0.9);
+  padding: 20px;
+  width: 20%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.signup-form input {
+  border: 1px solid white;
+  padding: 14px 16px;
+  font-size: 1.063rem;
+  background-color: transparent;
+  width: 200px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.signup-form button[type="submit"] {
+  border: 1px solid white;
+  padding: 14px 16px;
+  font-size: 1.063rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.signup-header {
+  font-size: 3.125rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
+  color: white !important;
+}
+
+@media screen and (max-width: 600px) {
+  .Signup-Start {
+    background-image: none !important;
+  }
+
+  .signup-container {
+    width: 95%;
+    backdrop-filter: none;
+    color: white;
+    height: auto;
+    padding: 0;
+    overflow: auto;
+  }
+
+  .signup-form input {
+    border: 1px solid white;
+    color: white;
+  }
+
+  .signup-form button[type="submit"] {
+    border: 1px solid white;
+    color: white;
+  }
+
+  .signup-header {
+    color: white !important;
+  }
+}

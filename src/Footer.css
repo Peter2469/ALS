@@ -1,0 +1,26 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid grey;
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    color: white;
+    background: linear-gradient(360deg, rgba(40,44,52,1) 50%, rgba(44,48,56,1) 100%); 
+  }
+  
+.footer .right {
+    text-align: right;
+    margin-left: auto;
+  }
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: none;
+    }
+    
+    .footer .right {
+        display: none;
+    }
+}

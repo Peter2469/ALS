@@ -1,0 +1,70 @@
+.BookStart {
+  text-align: center;
+  min-height: fit-content;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.App-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.search-results {
+  width: 100%;
+  min-height: fit-content;
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.item {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid white;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  color: white;
+  text-align: left;
+}
+
+.header-font {
+  margin-top: 75px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    width: 95%;
+  }
+
+  .header-font {
+    margin-top: 0px !important;
+  }
+
+  .content{
+    margin-bottom: 0px;
+  }
+}

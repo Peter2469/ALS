@@ -1,0 +1,114 @@
+.topnav {
+    text-align: center;
+    background: linear-gradient(180deg, rgba(40,44,52,1) 50%, rgba(44,48,56,1) 100%); 
+    position: fixed;
+    z-index: 1;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    top: 0;
+  }
+
+  .topnav a {
+    float: center;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.063rem;
+    border: 1px solid transparent;
+  }
+
+  .topnav a:hover {
+    border-bottom-color: #ddd;
+    color: white;
+  }
+
+  .topnav a.no-hover:hover {
+    border-bottom-color: transparent  !important;
+    color: #f2f2f2;
+  }
+
+  .topnav a.currently-selected {
+    border-bottom-color: #ddd;
+    color: white;
+  }
+
+  .search-bar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .search-bar input[type="search"] {
+    border: 1px solid white;
+    border-style: solid none solid solid;
+    padding: 14px 16px;
+    font-size: 1.063rem;
+    background-color: transparent;
+    width: 200px;
+    color: white;
+  }
+  
+  .search-bar button[type="submit"] {
+    border: 1px solid white;
+    border-style: solid solid solid none;
+    padding: 14px 16px;
+    font-size: 1.063rem;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    
+  }
+
+  .search-bar-container,
+  .support-link-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2c3038;
+  min-width: 240px;
+  z-index: 1;
+  border: 1px solid white;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  border: 1px solid white;
+  display: block;
+  margin: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .search-bar-container, .support-link-container {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .search-bar input[type=search] {
+    width: 100%;
+  }
+
+  .search-bar button[type=submit] {
+    float: none;
+  }
+
+  .topnav {
+    position: sticky;
+  }
+}

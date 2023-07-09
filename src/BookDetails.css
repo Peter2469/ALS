@@ -1,0 +1,197 @@
+.BookDetails-Start {
+  text-align: center;
+  min-height: fit-content;
+  margin: 0;
+  min-height: 100vh;
+  overflow-y: auto !important;
+}
+
+.App-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.search-results {
+  width: 100%;
+  min-height: fit-content;
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+  color: white;
+}
+
+.BookDetails-Start {
+  padding-top: 40px;
+}
+
+.allow-overflow {
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.item {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid white;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  color: white;
+  text-align: left;
+}
+
+.book-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.book-details-left {
+  flex-basis: 30%;
+  padding: 10px;
+  border: 1px solid white;
+  margin: 10px;
+}
+
+.book-image{
+  width: 325px;
+  height: 500px;
+}
+
+.book-details-middle {
+  flex-basis: 30%;
+  padding: 10px;
+  border: 1px solid white;
+  margin: 10px;
+}
+
+.book-details-right {
+  flex-basis: 30%;
+  padding: 10px;
+  border: 1px solid white;
+  margin: 10px;
+}
+
+.reviews{
+  min-height: fit-content;
+  margin: 0;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.book-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.review-form input {
+  border: 1px solid white;
+  padding: 14px 16px;
+  font-size: 1.063rem;
+  background-color: transparent;
+  width: 200px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.review-form button[type="submit"] {
+  border: 1px solid white;
+  padding: 14px 16px;
+  font-size: 1.063rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.checkout-form input {
+  border: 1px solid white;
+  padding: 14px 16px;
+  font-size: 1.063rem;
+  background-color: transparent;
+  width: 200px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.checkout-form button[type="submit"] {
+  border: 1px solid white;
+  padding: 14px 16px;
+  font-size: 1.063rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.qr-code {
+  background: white;
+  padding: 16px;
+  align-items: center !important;
+  display: flex !important;
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    width: 95%;
+  }
+
+  .book-details-left,
+  .book-details-middle,
+  .book-details-right {
+    flex-basis: 100%;
+  }
+
+  .BookDetails-Start {
+    padding-top: 0px;
+  }
+
+  .allow-overflow {
+    margin-bottom: 0;
+  }
+
+  .review-form input{
+    width: 85%;
+  }
+}
