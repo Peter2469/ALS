@@ -40,3 +40,13 @@ cd server && node server.js
 ```bash
 npm start
 ```
+
+### Account Information
+This is in the username/password for the accounts which is already in the database
+
+| Username | Password |
+| -------------- | --------------- |
+| johndoe | password123 |
+| janesmith | password456 |
+
+janesmith is a Staff Account and johndoe isn't
