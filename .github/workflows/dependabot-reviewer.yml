@@ -1,28 +1,38 @@
-name: Merge Dependabot PRs
+name: Dependabot Pull Request Approve and Merge
 
-on:
-  pull_request:
+on: 
+  pull_request_target:
     types:
       - opened
       - synchronize
-  workflow_dispatch:
+      - reopened
+
+permissions:
+  pull-requests: write
+  contents: write
 
 jobs:
-  auto-merge:
+  dependabot:
     runs-on: ubuntu-latest
-    if: github.actor == 'dependabot[bot]'
+    if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up GitHub CLI
-        uses: cli/gh-action@v2
+      - name: Dependabot metadata
+        id: dependabot-metadata
+        uses: dependabot/fetch-metadata@v1.3.3
         with:
-          version: latest
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Approve and merge Dependabot PR
+      - name: Approve the PR
+        run: gh pr review ${{ github.event.pull_request.number }} --approve
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Merge the PR
+        if: ${{ steps.dependabot-metadata.outputs.update-type != 'version-update:semver-major' }}
         run: |
-          gh pr review ${{ github.event.pull_request.number }} --approve
-          gh pr merge ${{ github.event.pull_request.number }} --merge --delete-branch
+          gh pr merge ${{ github.event.pull_request.number }} --squash --delete-branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
