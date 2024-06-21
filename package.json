@@ -15,7 +15,7 @@
     "react-scripts": "^5.0.1",
     "sqlite3": "^5.1.6",
     "web-vitals": "^3.3.2",
-    "react-qr-code": "2.0.14"
+    "react-qr-code": "2.0.15"
   },
   "scripts": {
     "start": "react-scripts start",
